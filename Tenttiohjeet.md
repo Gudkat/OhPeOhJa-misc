@@ -3,14 +3,14 @@
 - Luo tentti courses.mooc.fi
     - Normi 240 min, lisäaika 300 min
     - Itse teen tämän duplicate valikon kautta, niin tentti ohjeet tulee melkein oikein automaattisesti. Pitää käydä vaihtamassa tentin numero (ja vuodenaika tarvittaessa) ja tehtävien palautus kansiot oikealle päivämäärälle
-- Anna Teacher-oikeudet erkkikaila@gmail.com
+- Anna Teacher-oikeudet erkkikaila@gmail.com ja timo.paloneva@helsinki.fi
 - Tenttitehtävät `Manage page` osiosta
 - Tenttiohjeet `Manage instructions`
 - Lisäaika version voi tehdä duplicate exam valikon kautta kun luo uutta koetta. Se kopioi tehtävät ja tenttiohjeet. Tenttiohjeissa lisäaikaan pitää käydä vaihtamassa 5 tuntia tenttiajaksi.
 - Lisää tyhjät tehtäväpohjat repoon rage/ohjelmointi-konekoe-19-3-tehtavaa
 - Luo tenttikurssi tmc.mooc.fi
     - nimeämiset voi tarkistaa edellisistä tenteistä. Nimen eteen tulee se hy- automaattisesti organisaation mukaan
-    - yhdistä ohjelmointi-konekoe… repo (source)
+    - yhdistä koe palautus repoon, eli sourceen tulee: git@github.com:rage/ohjelmointi-konekoe-19-3-tehtavaa.git
 - Exam mode
 - Manage exercises
     - Disabloi kaikki ja enabloi vain kyseisen tentin tehtävät reposta
