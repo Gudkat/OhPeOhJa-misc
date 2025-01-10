@@ -1,0 +1,61 @@
+<!-- wp:paragraph -->
+<p><div>Kurssilla on käsitelty tietotyypejä kuten merkkijonot ja kokonaisluvut. Myös funktiot ovat oma tietotyyppinsä. Tämä tarkoittaa, että funktioita voidaan käsitellä aivan kuten muitakin tietotyyppejä. Niitä voidaan sijoittaa muuttujiin, antaa parametrinä toiselle funktiolle ja niin edespäin.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Alla oleva koodinpätkä antaa konkreettisen esimerkin:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div># Määritellään funktio
+def testi_funktio():
+    print('Terveiset testifunktiosta')
+
+# Luodaan funktio, joka saa parametrina toisen funktion
+def suorita_funktio(funktio):
+    # Kutsutaan parametrina annettua funktiota
+    funktio()
+
+# Syötetään testi_funktio suorita_funktio:lle
+suorita_funktio(testi_funktio) # Tulostuu: 'Terveiset testifunktiosta'</div></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><div>Luo tehtäväpohjaan kaksi funktiota. Funktiot on määritelty seuraavanlaisesti:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div><strong>a)</strong> <code>def suorita_monesti(funktio, n: int)</code>, joka suorittaa parametrina annetun funktion n kertaa.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Voit kokeilla koodiasi alla olevalla esimerkillä:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div># testi_funktio määritelty ylempänä
+suorita_monesti(testi_funktio, 3) # Tulostaa 'Terveiset testifunktiosta' 3 kertaa
+print()
+suorita_monesti(testi_funktio, 5) # Tulostaa 'Terveiset testifunktiosta' 5 kertaa</div></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><div><strong>b)</strong> <code>def tarkista_lista(tarkistus_funktio, lista: list)</code>, joka ajaa tarkistusfunktion parametrina annetun listan jokaiselle alkiolle. Jos tarkistus_funktio palauttaa <code>True</code> jokaiselle listan alkiolle, niin tarkista_lista palauttaa True. Muutoin tarkista_lista palauttaa <code>False</code>. Voit olettaa, että tarkistus_funktio on yksipaikkainen funktio, joka palauttaa totuusarvon.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Voit kokeilla koodiasi alla olevalla esimerkillä:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div>def suurempi_kuin_nolla(luku: int):
+    return luku > 0
+
+def on_palindromi(merkkijono: str): 
+    return merkkijono == merkkijono&#91;::-1]
+
+print(tarkista_lista(suurempi_kuin_nolla, &#91;1,2,3])) # True
+print(tarkista_lista(suurempi_kuin_nolla, &#91;1,2,0])) # False
+print(tarkista_lista(on_palindromi, &#91;'abba', 'saippuakauppias'])) # True
+print(tarkista_lista(on_palindromi, &#91;'abba', 'python'])) # False</div></code></pre>
+<!-- /wp:code -->

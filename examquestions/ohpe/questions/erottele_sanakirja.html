@@ -1,0 +1,47 @@
+<!-- wp:paragraph -->
+<p><div>Tässä tehtävässä luodaan kaksi funktiota tehtäväpohjaan. Funktiot on määritelty seuraavanlaisesti:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div><strong>a)</strong> <code>def erottele(merkkijono: str)</code></div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Palauttaa listan <strong>tupleja</strong> parametrina annetun merkkijonon perusteella. Listan tuplet ovat kaksipaikkaisia. Merkkijonot ovat muotoa <code>"jono1a;jono1b,jono2a;jono2b,jono3a; ..."</code>. Tuplet erotellaan merkkijonosta pilkun perusteella ja tuplen osat puolipisteellä, niin että puolipisteen vasemmanpuolinen merkkijono on tuplen vasemmanpuolinen alkio.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Kokeile koodisi toimintaa alla olevalla esimerkillä.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div>lista1 = erottele('maa;suomi,kaupunki;helsinki,huone;keittio')
+lista2 = erottele('nimi;ella')
+lista3 = erottele('valmistaja;aston martin,kuski;vettel')
+
+print(lista1) # &#91;('maa', 'suomi'), ('kaupunki', 'helsinki'), ('huone','keittio')]
+print(lista2) # &#91;('nimi', 'ella')]
+print(lista3) # &#91;('valmistaja', 'aston martin'), ('kuski', 'vettel')]</div></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><div><strong>b)</strong> <code>def sanakirjaksi(lista: list)</code></div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Palauttaa sanakirjan parametrina annetun listan pohjalta. Annettu lista koostuu kaksipaikkaisista tupleista, kuten a-kohdan funktion paluuarvo. Sanakirja rakennetaan niin, että listan tuplet vastaavat avain-arvo-pareja, missä tuplen vasen alkio on avain ja oikea alkio on arvo.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Kokeile koodisi toimintaa alla olevalla esimerkillä.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div>sanakirja1 = sanakirjaksi(&#91;('maa', 'suomi'), ('kaupunki', 'helsinki'), ('huone','keittio')])
+sanakirja2 = sanakirjaksi(&#91;('nimi', 'ella')])
+sanakirja3 = sanakirjaksi(&#91;('valmistaja', 'aston martin'), ('kuski', 'vettel')])
+
+print(sanakirja1) # {'maa': 'suomi', 'kaupunki': 'helsinki', 'huone': 'keittio'}
+print(sanakirja2) # {'nimi': 'ella'}
+print(sanakirja3) # {'valmistaja': 'aston martin', 'kuski': 'vettel'}</div></code></pre>
+<!-- /wp:code -->

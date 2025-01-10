@@ -1,0 +1,47 @@
+<!-- wp:heading {"level":6} -->
+<h6><div>Funktiot tietotyyppinä</div></h6>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><div>Kurssilla on käsitelty tietotyypejä kuten merkkijonot ja kokonaisluvut. Myös funktiot ovat oma tietotyyppinsä. Tämä tarkoittaa, että funktioita voidaan käsitellä aivan kuten muitakin tietotyyppejä. Niitä voidaan sijoittaa muuttujiin, antaa parametrinä toiselle funktiolle ja niin edespäin.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div>Alla oleva koodinpätkä antaa pari konkreettista esimerkkiä:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div># Määritellään funktio
+def testifunktio():
+    print('Terveiset testifuntiosta')
+
+# Luodaan funktio, joka saa parametrina toisen funktion
+def aja_funktio(funktio):
+    # Kutsutaan parametrina annettua funktiota aja_funktio:n sisällä
+    funktio()
+
+# Nyt aja_funktion sisällä kutsutaan testifunktiota 
+aja_funktio(testifunktio) # Tulostuu 'Terveiset testifunktiosta'</div></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><div>Luo funktio <code>muunna(lista, funktio)</code>, joka toimii seuraavasti:</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><div><code>muunna</code>-funktio syöttää parametrina annetun listan jokaisen alkion parametrinä annetulle funktiolle. Funktiolta saadut arvot lisätään uuteen listaan, jonka <code>muunna</code>-funktio lopulta palauttaa. Voit olettaa, että annettu lista ja funktio ovat sopivanlaisia. Alla esimerkki <code>muunna</code>-funktion käytöstä.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"fontSize":"small"} -->
+<pre class="wp-block-code has-small-font-size"><code><div>def lisaa_yksi(luku):
+    return luku + 1
+
+lista = &#91;1,1,1]
+
+lisatty = muunna(lista, lisaa_yksi)
+print(lisatty) # Tulostaa: &#91;2,2,2]</div></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><div><strong>Pythoniin sisäänrakennetun <code>map</code>-funktion käyttö on kielletty</strong></div></p>
+<!-- /wp:paragraph -->

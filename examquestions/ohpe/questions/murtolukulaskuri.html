@@ -1,0 +1,114 @@
+<!-- wp:paragraph -->
+<p>Kopioi alla oleva runko tehtäväpohjaan.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>from fractions import Fraction
+
+def murtolukulaskuri(lasku: str):
+    pass
+
+def muunna_murtoluvuksi(murtoluku: str):
+    pass</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><code>Fraction</code>-olio toimii siten, että se saa kaksi arvoa; ensimmäinen arvo on osoittaja ja toinen arvo on nimittäjä. Esimerkiksi puolikasta vastaava murtoluku luodaan <code>Fraction(1,2)</code>. Murtolukuja voi luoda myös desimaaleista Fraction-olion avulla myös, mutta sitä ei tässä tehtävässä tarvita.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tehtävänä on ohjelmoida murtolukulaskin, jolla voi suorittaa seuraavat operaatiot:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Yhteenlasku</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Vähennyslasku</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Kertolasku</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Murtoluvun supistus, jonka Fraction-olio tekee automaattisesti.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Rakenna ohjelma siten, että funktio <code>murtolukulaskuri</code> kutsuu <code>muunna_murtoluvuksi</code> funktiota. <code>murtolukulaskuri</code>lle annetaan arvoksi laskutoimitus merkkijonona ja se palauttaa laskutoimituksen tuloksen merkkijonona.  <code>muunna_murtoluvuksi</code> funktio saa arvoksi murtoluvun merkkijonona, ja palauttaa Fraction-olion. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Esimerkki <code>muunna_murtoluvuksi</code> funktion toiminnasta:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>murtoluku1 = "1/2"
+murtoluku2 = "15/375"
+murtolukuolio = muunna_murtoluvuksi(murtoluku2)
+print(muunna_murtoluvuksi(murtoluku1))
+print(type(murtolukuolio))
+print(murtolukuolio)</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Esimerkkitulostus:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>1/2
+&lt;class 'fractions.Fraction'>
+1/25</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Esimerkki <code>murtolukulaskuri</code> funktion toiminnasta:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>lasku1 = "1/2 + 3/4"
+lasku2 = "1/2 - 1/3"
+lasku3 = "1/2 * 1/4"
+supistettava = "15/375"
+
+summa = murtolukulaskuri(lasku1)
+erotus = murtolukulaskuri(lasku2)
+tulo = murtolukulaskuri(lasku3)
+supistettu = murtolukulaskuri(supistettava)
+
+print("supistettavan tyyppi:", type(supistettava))
+print("murtoluvun tyyppi:", type(muunna_murtoluvuksi(supistettava)))
+print("supistetun tyyppi:",type(supistettu))
+
+print(f'laskun {lasku1} summa on', summa)
+print(f'laskun {lasku2} erotus on', erotus)
+print(f'laskun {lasku3} tulo on', tulo)
+print(f'murtoluvun {supistettava} supistettu muoto on', supistettu)
+
+# Lasketaan (1/2 + 3/4) * (1/2 - 1/3) käyttäen hyväksi aiempien laskujen palautuksia
+lasku4 = f"{summa} * {erotus}"
+print(murtolukulaskuri(lasku4))</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Esimerkkitulostus:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>supistettavan tyyppi: &lt;class 'str'>
+murtoluvun tyyppi: &lt;class 'fractions.Fraction'>
+supistetun tyyppi: &lt;class 'str'>
+laskun 1/2 + 3/4 summa on 5/4
+laskun 1/2 - 1/3 erotus on 1/6
+laskun 1/2 * 1/4 tulo on 1/8
+murtoluvun 15/375 supistettu muoto on 1/25
+5/24</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><strong>Vinkki: Voit tedä tyyppimuunnoksen <code>str()</code>-funktiolla Fraction-oliolle</strong>.</p>
+<!-- /wp:paragraph -->

@@ -1,0 +1,31 @@
+<!-- wp:paragraph -->
+<p id="block-c7086d4c-0145-4818-a326-b8f141ddbb35"><div>Luo funktio <code>pisteet(tilasto)</code>, joka saa parametrikseen merkkijonon.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="block-a58556b3-3ca6-44da-b78a-4eda56d812cd"><div>Parametrina annettu merkkijono on jääkiekkojoukkueen tilasto, joka on muodoltaa: [joukkue]:[voitot]-[tappiot]-[tasapelit]</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="block-851f6690-e717-42a4-b9df-20d62bb0a6f1"><div>Esimerkiksi merkkijono: "Kumpulan Älynväläys:0-8-1" kuvaa joukkuetta nimeltään <code>Kumpulan Älynväläys</code>, jolla on 0 voittoa, 8 tappioita ja 1 tasapeli.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="block-113fa06b-cbca-4338-beb4-615d38625a9c"><div>Funktio <code>pisteet(tilasto)</code> palauttaa joukkueen saamat pisteet kokonaislukuna. Pisteet lasketaan niin että voitosta saa kolme pistettä, tasapelistä yhden pisteen ja tappiosta ei yhtään.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="block-d975bbab-3c5b-4afe-85ad-51f78dda019d"><div>Funktio nostaa <code>ValueError</code> poikkeuksen, jos voitot, tappiot tai tasapelit eivät ole luettavia kokonaislukuina. Esimerkiksi funktion suorittaminen merkkijonolla: "KBC:6-xx-1", nostaisi <code>ValueError</code> poikkeuksen.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="block-e88b05a2-f864-49e4-8029-72213949a8c9"><div>Voit olettaa, että annetussa merkkijonossa on sopiva määrä kaksoispisteitä ja viivoja, ja että kokonaisluvut ovat positiivisia.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p id="block-9bd7fd06-3d2b-45da-a2f4-20b76726156f"><div>Alla on merkkijonoja, jolla voit testata funktiotasi.</div></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul id="block-dbd4ef71-3d2f-48cf-bf36-85a1468f5e9d"><div><li>"Heban haukat:5-6-1"</li><li>"Brewsterit:3-12-10"</li><li>"Virkavapailijat:0-0-0"</li><li>"KBC:AAA-1-ll"</li><li>"Navy jerries:7-xx-1"</li><li>"Loosisters:8-5-abb"</li></div></ul>
+<!-- /wp:list -->
