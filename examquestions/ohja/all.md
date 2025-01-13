@@ -161,5 +161,6 @@
 ## Autumn 2024 exam 2 14.12.2024
 
 - Tuote
+  - Lisää testi sille, ettei yksikkö ole kovakoodattu str metodiin
 - Ostoslista
 - Ostosten_muokkaus_ja_tallennus
