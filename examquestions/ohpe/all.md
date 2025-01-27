@@ -197,3 +197,9 @@
 - kirjainten_esiintyminen
 - etsi_geenin_sijainnit
 - lottosimulaattori
+
+## Syksy 2024 exam 5 11.01.2025
+
+- merkkijonot
+- vokaalit_funktio
+- tilastot

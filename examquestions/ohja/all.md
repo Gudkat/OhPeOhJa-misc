@@ -134,7 +134,7 @@
 - Auto
 - Nelilaskin
 
-## Spring 2024 exam 2 4.5.2024
+## Spring 2024 exam 2 11.5.2024
 
 - Kysymys ja tentti
 - Aamupala_generaattori
@@ -163,4 +163,18 @@
 - Tuote
   - Lisää testi sille, ettei yksikkö ole kovakoodattu str metodiin
 - Ostoslista
+  - Lisää testi sille, että olemassa olevaa lisätään uudestaan
+  - tehtävänannossa oli paluta_kaikki_tuotteet (TYPO)!. Korjasin normikokeen versiosta sen, toivottavasti ei päädy myöhempiin kokeisiin. Testeri asetettu toimimana molemmilla. Sen voi varmaan poistaa enskerralla kunhan tuo typo ei livahda uudestaan.
 - Ostosten_muokkaus_ja_tallennus
+
+## Autumn 2024 exam 3 17.12.2024
+
+- Muusikko ja orkesteri
+- Aamupala_generaattori
+- Nelilaskin
+
+## Autumn 2024 exam 4 18.1.2025
+
+- VertailtavaPiste
+- Aamupala_generaattori
+- Noppa ja noppapeli
