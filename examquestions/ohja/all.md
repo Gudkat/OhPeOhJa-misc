@@ -178,3 +178,9 @@
 - VertailtavaPiste
 - Aamupala_generaattori
 - Noppa ja noppapeli
+
+## Autumn 2025 exam 5 15.2.2025
+
+- Käyttäjä
+- Käyttäjäjärjestelmä
+- UI ja tallennus
