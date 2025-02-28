@@ -182,5 +182,6 @@
 ## Autumn 2025 exam 5 15.2.2025
 
 - Käyttäjä
+  - Lisää esimerkki __muotoilu parametrin käytöstä
 - Käyttäjäjärjestelmä
 - UI ja tallennus
