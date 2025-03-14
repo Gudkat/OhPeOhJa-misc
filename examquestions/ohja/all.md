@@ -185,3 +185,12 @@
   - Lisää esimerkki __muotoilu parametrin käytöstä
 - Käyttäjäjärjestelmä
 - UI ja tallennus
+  - selkeytä tehtävänannossa 
+    - mitä tallenna loki tekee
+    - että ohjelma pitää käynnistää
+    - esimerkki miltä loki näyttää kun se on tallennettu
+    - testissä on "käyttäjä on jo olemassa" jos yritetään luoda käyttäjää, joka on jo järjestelmässä. Tentissä ei ollut ohjeistusta tähän
+    - opiskelija valitteli kommenteissa kolmostehtävässä sitä, et kakkostehtävä ottaa jo virheen kiinni niin liian vaikee kolmostehtävässä erotella tapauksia.
+    - laita tehtävään viesti, että opiskelijat saavat vapaasti muokata aiempia tehtäviä tämän tehtävän ratkaisun tueksi
+    - "huomaa, että ohjelman pitää tunnistaa käyttäjän kirjaamisstatus... siis jos lokitiedostojen perusteella käyttäjä on ohjelman käynnistyshetkellä kirjattuna sisään"
+    - testi edelliselle riville
