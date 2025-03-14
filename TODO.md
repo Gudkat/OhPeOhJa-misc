@@ -1,3 +1,3 @@
 - Tehtävä Part 3, Section 2: "Find the First Substring."
     - Lisää testi tapaus sille, että kolme viimeistä merkkiä ovat etsitty merkkijono
-
+- Miettiä voisiko omapeli ohjeistusta jotenkin selkeyttää. Opiskelija koki vaikeaksi hahmottaa mikä oli se missä oli vertaisarvoitava palautus jos palautus ei ollut oikeassa muodossa (eli linkkinä)
