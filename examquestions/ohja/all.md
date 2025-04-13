@@ -194,3 +194,9 @@
     - laita tehtävään viesti, että opiskelijat saavat vapaasti muokata aiempia tehtäviä tämän tehtävän ratkaisun tueksi
     - "huomaa, että ohjelman pitää tunnistaa käyttäjän kirjaamisstatus... siis jos lokitiedostojen perusteella käyttäjä on ohjelman käynnistyshetkellä kirjattuna sisään"
     - testi edelliselle riville
+
+## Spring 2025 exam 1 15.3.2025
+- Resepti
+- ReseptiKirja
+- reseptiohjelman käyttöliittymä ja tallennus
+  - esimerkki tehtävänantoon aikahaulle 
