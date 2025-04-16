@@ -1,0 +1,8 @@
+Ohjelmoinnin peruskurssi ja Ohjelmoinnin jatkokurssi (periodit III ja IV,
+suomeksi ja englanniksi)
+==================================================================================================
+Etsimme kurssiassistenttia ohjelmoinnin perusteet- ja jatkokurssille.
+Työtehtäviin kuuluu muun muassa opiskelijoiden neuvominen, kurssisähköpostin
+lukeminen sekä kokeiden suunnittelu ja tarkastaminen. Kurssin opetuskielenä
+toimii Python. Työmäärä on noin 7,5 tuntia viikossa 3. ja 4. periodilla.
+Lisätietoja antaa Timo Paloneva.
